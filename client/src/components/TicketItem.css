@@ -1,0 +1,62 @@
+/* client/src/components/TicketItem.css */
+
+.ticket-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  width: 320px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ticket-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-item h3 {
+  color: #2ECC71; /* Primary Green */
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.ticket-item p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  flex-grow: 1; /* Allows description to take available space */
+}
+
+.ticket-item .price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #34495E; /* Neutral Dark */
+  margin-bottom: 15px;
+}
+
+.ticket-item .details {
+  font-size: 0.85rem;
+  color: #7f8c8d; /* Lighter Neutral */
+  margin-bottom: 15px;
+}
+
+.ticket-item .eco-badge {
+  display: inline-block;
+  background-color: #A9DFBF; /* Light green for eco badge */
+  color: #145A32; /* Darker green text */
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  /* Add a small leaf icon here if available */
+  /* content: '🌿 Eco-Friendly'; */
+}
+
+.ticket-item .button { /* Using global button styles */
+  width: 100%;
+  margin-top: auto; /* Pushes button to the bottom */
+}

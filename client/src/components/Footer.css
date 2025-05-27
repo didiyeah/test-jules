@@ -1,0 +1,40 @@
+/* client/src/components/Footer.css */
+
+footer {
+  background-color: #34495E; /* Neutral Dark */
+  color: #ECF0F1; /* Neutral Light for text */
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: auto; /* Pushes footer to the bottom if content is short */
+}
+
+footer .container { /* Using .container utility class */
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: #3498DB; /* Secondary Blue for links */
+}
+
+footer a:hover {
+  color: #5DADE2; /* Lighter Blue for hover */
+  text-decoration: underline;
+}
+
+/* Placeholder for social media icons or other footer links */
+.footer-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links a {
+  font-size: 0.9rem;
+}

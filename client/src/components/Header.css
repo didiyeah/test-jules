@@ -1,0 +1,68 @@
+/* client/src/components/Header.css */
+
+header {
+  background-color: #2ECC71; /* Primary Green */
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+header .container { /* Using .container utility class for centering and padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .logo-placeholder {
+  font-size: 1.8rem;
+  font-weight: bold;
+  /* In a real app, replace text with an <img> tag for the logo */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Spacing between nav items */
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active { /* Assuming 'active' class for active link */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+  }
+
+  header nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul li a {
+    display: block; /* Make links take full width for easier tapping */
+    padding: 10px;
+  }
+}
