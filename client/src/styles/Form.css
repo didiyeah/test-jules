@@ -1,0 +1,89 @@
+/* client/src/styles/Form.css */
+
+.form-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
+  padding: 20px;
+  background-color: #f4f7f6; /* Lighter than body for contrast */
+}
+
+.form-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.form-container h2 {
+  color: #2ECC71; /* Primary Green */
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  color: #34495E; /* Neutral Dark */
+  margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #bdc3c7; /* Light border */
+  border-radius: 5px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+  outline: none;
+  border-color: #3498DB; /* Secondary Blue on focus */
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.form-container .button { /* Using global button styles */
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+.form-links {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.form-links a {
+  color: #3498DB; /* Secondary Blue */
+  font-weight: 700;
+}
+
+.form-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 25px 30px;
+  }
+
+  .form-container h2 {
+    font-size: 1.8rem;
+  }
+}

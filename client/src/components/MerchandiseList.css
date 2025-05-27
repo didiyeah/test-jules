@@ -1,0 +1,24 @@
+/* client/src/components/MerchandiseList.css */
+
+.merchandise-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items by default */
+  gap: 10px; /* Gap between items */
+  padding: 20px 0;
+}
+
+/* Adjust justification for larger screens if desired */
+@media (min-width: 768px) {
+  .merchandise-list {
+    justify-content: flex-start; /* Align to start on larger screens */
+  }
+}
+
+.no-items-message { /* Reusing class from TicketList.css for consistency */
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
